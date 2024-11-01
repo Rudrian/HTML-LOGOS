@@ -1,0 +1,175 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte principal */
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+/* Seção de informações no topo */
+.superinfo-bg {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.superinfo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.superinfo a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.superinfo a:hover {
+    text-decoration: underline;
+}
+
+/* Cabeçalho */
+.menu-bg {
+    background-color: #444;
+    padding: 15px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu-logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu-nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* Container dos produtos */
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.produtos-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.produtos-item:hover {
+    transform: translateY(-5px);
+}
+
+.produtos-item h2 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Esquema de cores para cada logomarca */
+.produtos-item.purple {
+    border-top: 5px solid #6a0dad;
+}
+
+.produtos-item.pink {
+    border-top: 5px solid #ff69b4;
+}
+
+.produtos-item.blue {
+    border-top: 5px solid #007bff;
+}
+
+/* Imagens dos produtos */
+.produtos-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+/* Descrição dos produtos */
+.descricao {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produtos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
